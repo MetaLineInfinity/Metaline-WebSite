@@ -1,0 +1,44 @@
+.left-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-bar-items {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(28, 67, 103);
+}
+
+.left-bar-items>div:first-child {
+  margin-top: 150px;
+}
+
+.left-bar-item {
+  font-size: 30px;
+  font-family: fzxs;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.left-bar-pink {
+  background-image: url("../img/left-bar-pink@2x.png");
+  width: 274.5px;
+  height: 66px;
+  background-size: 100% 100%;
+  margin-left: calc(50% - 137.25px);
+}
+
+.left-bar-blue {
+  background-image: url("../img/left-bar-blue@2x.png");
+  width: 279px;
+  height: 66px;
+  background-size: 100% 100%;
+  margin-left: calc(50% - 139.5px);
+}
