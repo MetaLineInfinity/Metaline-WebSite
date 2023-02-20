@@ -3,6 +3,10 @@
     <div>
       <div id="header" class="section1-header">
         <img class="section1-img2" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/logo.png?v=1.1.3" alt="">
+        <div class="blind-box" @click="footerClick('https://nft.metaline.games')">
+          <img src="https://d3vndanhiwhas.cloudfront.net/static/img/common/ico_boxblue.png" alt="">
+          <p>Mystery Box</p>
+        </div>
       </div>
       <div id="home" class="header">
         <p class="header-title">Community & How to Play</p>
@@ -32,17 +36,6 @@
               <video v-else ref="video" class="iframeCss" controls poster="https://d3vndanhiwhas.cloudfront.net/static/img/common/videobg.png?v=1.1.3">
                 <source src="https://d3vndanhiwhas.cloudfront.net/video/metaline.mp4" type="video/mp4">
               </video>
-<!--              <img v-if="!show_video" @click="show_video=!show_video" draggable="false" src="https://d3vndanhiwhas.cloudfront.net/m/img/img_play.png" alt="">-->
-<!--              <iframe-->
-<!--                      type="text/html"-->
-<!--                      src="https://www.youtube.com/embed/SGI4xZiui3w?autoplay=1"-->
-<!--                      width="100%"-->
-<!--                      height="100%"-->
-<!--                      allowfullscreen-->
-<!--                      :allowtransparency="true"-->
-<!--                      frameborder="0"-->
-<!--                      class="iframeCss">-->
-<!--              </iframe>-->
             </div>
           </div>
           <img draggable="false" class="section2-5-line" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/line04.png?v=1.1.3" alt="">
@@ -64,7 +57,7 @@
             </div>
           </div>
           <div class="section2-1-bottom">
-            <div draggable="false" class="open-sea"><a @click="footerClick('https://opensea.io')">OpenSea</a></div>
+            <div draggable="false" class="open-sea"><a @click="footerClick('https://opensea.io/collection/metaline-mysterybox')">OpenSea</a></div>
             <div draggable="false" class="uniswap"><a @click="footerClick('https://uniswap.org/')">UniSwap</a></div>
           </div>
           <img draggable="false" class="section2-1-line" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/line02.png?v=1.1.3" alt="">
@@ -94,7 +87,7 @@
               <img draggable="false" class="ship2" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/img_boat01.gif?v=1.1.3" alt="">
             </div>
           </div>
-<!--          <img draggable="false" class="section2-3-bottom" src="https://d3vndanhiwhas.cloudfront.net/m/img/section2-3-bottom.png" alt="">-->
+          <!--          <img draggable="false" class="section2-3-bottom" src="https://d3vndanhiwhas.cloudfront.net/m/img/section2-3-bottom.png" alt="">-->
           <img draggable="false" class="section2-3-line" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/line03.png?v=1.1.3" alt="">
         </div>
         <div class="section2-4" data-aos="fade-up" data-aos-delay="150" id="map">
@@ -126,11 +119,6 @@
           </div>
           <img draggable="false" data-aos="zoom-in" data-aos-delay="200"  class="section2-5-bottom" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/img_bgbig02.png?v=1.1.3" alt="">
           <img draggable="false"  class="section2-5-line" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/line04.png?v=1.1.3" alt="">
-        </div>
-        <div class="section-echart" data-aos="zoom-in" data-aos-delay="250">
-          <h1>TOTAL SUPPLY 300000000</h1>
-          <div id="myChart" class="pie-chart"></div>
-          <img draggable="false" class="section2-3-line" src="https://d3vndanhiwhas.cloudfront.net/static/img/common/line03.png?v=1.1.3" alt="">
         </div>
       </div>
       <div class="road-map" data-aos="zoom-in" data-aos-delay="250">
@@ -175,6 +163,7 @@
           <div class="partner-item">
             <p>Resource</p>
             <a @click="footerClick('https://whitepaper.metaline.games/')">WhitePaper</a>
+            <a @click="footerClick('https://github.com/MetaLineInfinity')">Github</a>
           </div>
           <div class="partner-item">
             <p>Social</p>
@@ -183,7 +172,7 @@
             <a @click="footerClick('https://link.medium.com/n9AZRIAd4vb')">Medium</a>
           </div>
           <div class="partner-item">
-            <p>Contract</p>
+            <p>Contact</p>
             <a href="mailto:business@metaline.games">business@metaline.games</a>
           </div>
         </div>
